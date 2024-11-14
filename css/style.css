@@ -159,8 +159,13 @@ body {
 }
 
 .btn-large {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: .375rem 1.875rem;
+    font-size: 1rem;
+    border-radius: 1.875rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold
 }
 
 .btn-primary {
@@ -232,6 +237,15 @@ main {
     background-color: #141922;
     flex-grow: 1;
     overflow: auto;
+}
+
+.top-main {
+    height: 5.625rem;
+    background-color: #080b12;
+    padding: 1.125rem 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .625rem;
 }
 
 
