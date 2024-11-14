@@ -36,6 +36,7 @@
     margin-right: auto;
     /* padding-left: 20px;
     padding-right: 20px; */
+    
 }
 
 .row {
@@ -89,13 +90,39 @@ body {
     HEADER
 ------------------*/
 
+header {
+    background-color: black;
+    max-width: 300px;
+    flex-shrink: 0;
+    color: #fff;
+    max-height: calc(100% - 80px);
+}
+
+
 /*----------------
     MAIN
 ------------------*/
 
+main {
+    background-color: violet;
+    max-width: calc(100% - 300px);
+    height: 100vh;
+    overflow: auto;
+}
+
+
+
 /*----------------
     FOOTER
 ------------------*/
+
+footer {
+    height: 80px;
+    flex-shrink: 0;
+    background-color: grey;
+    position:sticky;
+    bottom: 0;
+}
 
 /*----------------
     RESPONSIVE
