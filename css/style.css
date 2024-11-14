@@ -41,7 +41,7 @@
 
 .row {
     display: flex;
-   
+    height: calc(100% - 100px);
 }
 
 .gap-10 > .col {
@@ -63,6 +63,7 @@
 ------------------*/
 body {
     font-family: "Roboto", serif;
+    height: 100vh;
 }
 
 /*----------------
@@ -92,10 +93,9 @@ body {
 
 header {
     background-color: black;
-    max-width: 300px;
+    width: 50px;
     flex-shrink: 0;
     color: #fff;
-    max-height: calc(100% - 80px);
 }
 
 
@@ -105,8 +105,7 @@ header {
 
 main {
     background-color: violet;
-    max-width: calc(100% - 300px);
-    height: 100vh;
+    flex-grow: 1;
     overflow: auto;
 }
 
@@ -117,7 +116,7 @@ main {
 ------------------*/
 
 footer {
-    height: 80px;
+    height: 100px;
     flex-shrink: 0;
     background-color: grey;
     position:sticky;
