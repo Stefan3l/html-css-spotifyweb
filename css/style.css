@@ -41,7 +41,6 @@
 }
 
 .row-menu .nav-bottom .img-download {
-    width: 2.5rem;
     height: 1.25rem;
 }
 
@@ -180,17 +179,6 @@ header {
     color: #fff;
 }
 
-
-/*----------------
-    MAIN
-------------------*/
-
-main {
-    background-color: violet;
-    flex-grow: 1;
-    overflow: auto;
-}
-
 .title-logo {
     font-size: 1.875rem;
 }
@@ -221,6 +209,33 @@ main {
     margin-bottom: .625rem;
 }
 
+.row-menu .nav-bottom .install-app {
+    color: var(--color-font-header);
+}
+
+.nav-bottom ul li {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin-left: .5rem;
+}
+
+.nav-bottom ul li span, hr {
+    display: none;
+}
+
+/*----------------
+    MAIN
+------------------*/
+
+main {
+    background-color: #141922;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+
+
 /*----------------
     FOOTER
 ------------------*/
@@ -228,7 +243,7 @@ main {
 footer {
     height: 6.25rem;
     flex-shrink: 0;
-    background-color: grey;
+    background-color: #282828;
     position:sticky;
     bottom: 0;
 }
@@ -265,6 +280,10 @@ footer {
     .row-menu .nav-playlist {
         display: block;
     }
+    .nav-bottom ul li span, hr {
+        display: block;
+    }
+    
 }
 /* MD >= 768px */
 @media screen and (min-width: 768px) {
@@ -276,6 +295,11 @@ footer {
 }
 /* XL >= 1200px */
 @media screen and (min-width: 1200px) {
+    .row {
+        display: flex;
+        height: calc(100% - 80px);
+    }
+    
     
     footer {
         height: 5rem;
