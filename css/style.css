@@ -265,6 +265,17 @@ main {
     z-index: 10;
 }
 
+.categories .menu-categories ul {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    padding: .625rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--color-font-header);
+    font-size: 14px;
+    font-weight: 600
+}
 
 
 /*----------------
