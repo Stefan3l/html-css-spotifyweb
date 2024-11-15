@@ -354,6 +354,32 @@ footer {
     left:0;
 }
 
+.sound-album {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.audio-song {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.img-song {
+    height: 1.75rem;
+    margin-top: 1.625rem;
+    margin-bottom: 1.625rem;
+}
+
+.title-audio h4 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.title-audio p {
+    color: var(--color-font-header);
+}
+
 /*----------------
     RESPONSIVE
     Mobile First
