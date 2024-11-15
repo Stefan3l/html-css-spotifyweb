@@ -145,6 +145,14 @@
     width: calc((100% - 10px) / 2);
 }
 
+.row-footer {
+    gap: .625rem;
+}
+
+.row-footer .col-footer {
+    width: calc((100% - 1.25rem) / 3);
+}
+
 
 .gap-10 > .col {
     padding: 10px;
@@ -247,9 +255,9 @@ header {
     margin-left: .5rem;
 }
 
-.nav-bottom ul li span, hr {
+.space-header {
     display: none;
-}
+ }  
 
 .nav-top .logo-big {
     padding: 10px;
@@ -363,12 +371,19 @@ footer {
 .audio-song {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    display: flex;
+    align-items: center;
 }
 
 .img-song {
     height: 1.75rem;
     margin-top: 1.625rem;
     margin-bottom: 1.625rem;
+}
+
+.footer-left {
+    display: flex;
+    margin-right: 1.25rem;
 }
 
 .title-audio h4 {
@@ -378,6 +393,70 @@ footer {
 
 .title-audio p {
     color: var(--color-font-header);
+}
+
+.footer-left .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    color: var(--color-font-header);
+    margin-left: 1.5rem;
+}
+
+.footer-left .icon .fa-heart, .fa-folder {
+    font-size: 1.5rem;
+}
+
+.button-music {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.button-music button {
+    font-size: 1.375rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.button-music button .fa-circle-play {
+    font-size: 2.25rem;
+}
+
+
+.play-music {
+    display: flex;
+    gap: .875rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.play-music p {
+    color: #fff;
+}
+
+.play-music > hr {
+    width: 55%;
+    height: .3125rem;
+    border-width: 0;
+    background-color: var(--color-font-header);
+}
+
+.volum {
+    display: flex;
+    color: #fff;
+    gap: 8px;
+    align-items: center;
+    margin-left: 1.25rem;
+}
+
+.volum > hr {
+    width: 42%;
+    height: .3125rem;
+    border-width: 0;
+    background-color: var(--color-font-header);
 }
 
 /*----------------
@@ -405,9 +484,9 @@ footer {
     .row-menu .nav-playlist {
         display: block;
     }
-    .nav-bottom ul li span, hr {
+    .space-header {
         display: block;
-    }
+     }  
     .visibile-mobile {
         display: none;
     }

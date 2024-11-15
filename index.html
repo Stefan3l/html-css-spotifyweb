@@ -77,12 +77,12 @@
                 <ul>
                     <li>
                         <img class="img-fluid img-download" src="./img/download.svg" alt="download">
-                        <span class="install-app">Installa app</span>
+                        <span class="install-app hidden-mobile">Installa app</span>
                     </li>
-                    <hr>
+                    <hr class="space-header">
                     <li>
                         <img class="img-fluid  img-profile" src="./img/profile.svg" alt="profile">
-                        <span class="profile-name">John Doe</span>
+                        <span class="profile-name hidden-mobile">John Doe</span>
                     </li>
                 </ul>
                </div> 
@@ -281,8 +281,8 @@
        </main>
     </div>
     <footer>
-        <div class="audio-song">
-            <div class="footer-left">
+        <div class="row-footer audio-song">
+            <div class="footer-left  col-footer">
                 <div class="sound-album">  
                     <div class="img-audio">
                         <img class="img-song" src="./img/sinister.jpeg" alt="Sinister">
@@ -293,15 +293,41 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <img>
-                    <img>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
                 </div>
             </div> 
-            <div class="play-song">
-
+            <div class="footer-central  col-footer">
+                <div class="button-music">
+                    <button>
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+                <div class="play-music">
+                    <p>0:25</p>
+                    <hr>
+                    <p>4:35</p>
+                </div>
             </div>
-            <div class="volum">
-
+            <div class="footer-right col-footer">
+                <div class="volum">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <hr>
+                </div>
             </div>  
         </div>
     </footer>
