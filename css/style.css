@@ -322,6 +322,16 @@ main {
     display: block;
 }
 
+.title-albums {
+    color: #fff;
+    padding: 1.25rem;
+
+}
+
+.second-title-albums {
+    color:var(--color-font-header);
+    padding: 1.25rem;
+}
 
 /*----------------
     FOOTER
