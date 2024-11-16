@@ -124,7 +124,7 @@
 
 .row {
     display: flex;
-    height: calc(100% - 100px);
+    height: calc(100% - 6.25rem);
 }
 
 .row-albums {
@@ -405,17 +405,17 @@ footer {
 }
 
 .footer-left .icon .fa-heart, .fa-folder {
-    font-size: 1.5rem;
+    font-size: .875rem;
 }
 
 .button-music {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 
 .button-music button {
-    font-size: 1.375rem;
+    font-size: .875rem;
     color: #fff;
     background-color: transparent;
     border: none;
@@ -435,10 +435,11 @@ footer {
 
 .play-music p {
     color: #fff;
+    font-size: .75rem;
 }
 
 .play-music > hr {
-    width: 55%;
+    width: 5.625rem;
     height: .3125rem;
     border-width: 0;
     background-color: var(--color-font-header);
@@ -453,10 +454,21 @@ footer {
 }
 
 .volum > hr {
-    width: 42%;
+    width: 4.375rem;
     height: .3125rem;
     border-width: 0;
     background-color: var(--color-font-header);
+}
+
+.footer-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*----------------
@@ -506,6 +518,10 @@ footer {
     
 /* XL >= 1200px */
 @media screen and (min-width: 1200px) {
+    .row {
+        display: flex;
+        height: calc(100% - 5rem);
+    }
     .row-albums .col {
         width: calc((100% - 10px) / 2);
     }
@@ -519,5 +535,11 @@ footer {
     
     footer {
         height: 5rem;
+        overflow: hidden;
+    }
+
+    .play-music > hr {
+        width: 18.75rem;
+       
     }
 }
