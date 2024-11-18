@@ -259,6 +259,10 @@ header {
     justify-content: center;
 }
 
+.nav-top ul {
+    border-left: solid transparent;
+}
+
 .row-menu .nav-playlist {
     display: none;
 }
@@ -290,6 +294,28 @@ header {
     height: 76px;
     padding-left: 0px;
 }
+
+.nav-top:hover {
+    color: #fff;
+}
+
+.nav-playlist h3:hover {
+    color: #fff;
+    cursor: pointer;
+} 
+
+.nav-playlist > h2 {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-bottom ul li .hover-effect:hover {
+    color:aliceblue;
+}
+
+
+
+
 
 /*----------------
     MAIN
@@ -343,6 +369,11 @@ main {
 
 .row-albums .album-img {
     position: relative;
+}
+
+.album .img-circle {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .row-albums .album-img .img-overlay {
@@ -525,6 +556,32 @@ footer {
     width: 9.375rem;
 }
 
+.footer-left .sound-album .title-audio > p:hover {
+    color: #fff;
+    text-decoration: underline #fff;
+}
+
+.footer-left .icon .fa-heart:hover, 
+.fa-folder:hover {
+    color: #fff;
+}
+
+.footer-central .button-music button:hover {
+    font-size: 1.5rem;
+    color:aliceblue;
+}
+
+.footer-central .button-music button
+.fa-circle-play:hover {
+    font-size: 3.125rem;
+    color: aliceblue;
+}
+
+.footer-right .volume i:hover {
+    color:aliceblue;
+    font-size: 1.625rem;
+}
+
 /*----------------
     RESPONSIVE
     Mobile First
@@ -537,7 +594,6 @@ footer {
     }
     .row-menu {
         text-align: left;
-        margin-left: 1rem;
     }
     .row-menu .nav-top > h1 {
         display: flex;
@@ -560,6 +616,14 @@ footer {
     .hidden-mobile {
         display: block;
     }
+
+    .nav-top > ul li:first-child {
+        border-left: solid limegreen;
+    }
+
+    .alignament-left {
+        margin-left: 1rem;
+    }
     
 }
 /* MD >= 768px */
@@ -571,6 +635,8 @@ footer {
     .play-music .play-bar {
         width: 12.5rem;
     }
+
+   
 }
 
     
