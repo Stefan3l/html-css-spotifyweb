@@ -46,6 +46,7 @@
 
 .row-menu .nav-bottom .img-download {
     height: 1.25rem;
+    margin-left: .1875rem;
 }
 
 .row-menu .nav-bottom .img-profile {
@@ -149,10 +150,6 @@
     gap: .625rem;
 }
 
-.row-footer .col-footer {
-    width: calc((100% - 1.25rem) / 3);
-}
-
 
 .gap-10 > .col {
     padding: 10px;
@@ -167,6 +164,16 @@
 .grow {
     flex-grow: 1;
 }
+
+/* .after-click:hover {
+    color: #fff;
+    font-size: 1.125rem;
+} */
+
+li:hover {
+    color: #fff;
+    cursor: pointer;
+  }
 
 /*----------------
     TYPOGRAPHY
@@ -277,10 +284,11 @@ main {
 
 .top-main {
     height: 5.625rem;
-    background-color: #080b12;
+    background-color: rgba(0,0,0,0.8);
     padding: 1.125rem 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-right: .625rem;
     position: sticky;
     top:0;
@@ -384,6 +392,7 @@ footer {
 .footer-left {
     display: flex;
     margin-right: 1.25rem;
+    width: 9.375rem;
 }
 
 .title-audio h4 {
@@ -428,9 +437,10 @@ footer {
 
 .play-music {
     display: flex;
-    gap: .875rem;
+    gap: .625rem;
     align-items: center;
     padding-top: 1rem;
+    margin: auto;
 }
 
 .play-music p {
@@ -438,14 +448,8 @@ footer {
     font-size: .75rem;
 }
 
-.play-music > hr {
-    width: 5.625rem;
-    height: .3125rem;
-    border-width: 0;
-    background-color: var(--color-font-header);
-}
 
-.volum {
+.volume {
     display: flex;
     color: #fff;
     gap: 8px;
@@ -453,22 +457,41 @@ footer {
     margin-left: 1.25rem;
 }
 
-.volum > hr {
+.volume .volume-bar {
+    height: .25rem;
+    background-color: #5a5a5a;
     width: 4.375rem;
-    height: .3125rem;
-    border-width: 0;
-    background-color: var(--color-font-header);
+}
+
+.volume .volume-bar .volume-bar-inner {
+    width: 25%;
+    height: 100%;
+    background-color: #c1c1c1;
 }
 
 .footer-central {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+}
+
+.play-music .play-bar {
+    height: .25rem;
+    background-color: #5a5a5a;
+    width: 6.25rem;
+}
+
+.play-music .play-bar .play-bar-inner {
+    width: 25%;
+    height: 100%;
+    background-color: #c1c1c1;
 }
 
 .footer-right {
     display: flex;
     justify-content: flex-end;
+    width: 9.375rem;
 }
 
 /*----------------
@@ -513,6 +536,10 @@ footer {
     .row-albums .col {
         width: calc((100% - 30px) / 4);
     }
+
+    .play-music .play-bar {
+        width: 12.5rem;
+    }
 }
 
     
@@ -538,8 +565,7 @@ footer {
         overflow: hidden;
     }
 
-    .play-music > hr {
-        width: 18.75rem;
-       
+    .play-music .play-bar {
+        width: 300px;
     }
 }
