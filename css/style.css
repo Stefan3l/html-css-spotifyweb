@@ -284,13 +284,19 @@ header {
     cursor: pointer;
 } 
 
-.nav-playlist > h2 {
+.nav-playlist > h2:hover {
     color: #fff;
     cursor: pointer;
+    font-size: 1.625rem;
 }
 
-.nav-bottom ul li > .hover-effect:hover {
+.nav-playlist h3 > i:hover {
+    background-color: #fff;
+}
+
+.nav-bottom ul li > .install-app:hover {
     color:aliceblue;
+    font-size: 1.25rem;
 }
 
 /*----------------
@@ -557,6 +563,7 @@ footer {
     font-size: 1.625rem;
 }
 
+
 /*----------------
     RESPONSIVE
     Mobile First
@@ -569,6 +576,7 @@ footer {
     }
     .row-menu {
         text-align: left;
+        overflow: hidden;
     }
     .row-menu .nav-top > h1 {
         display: flex;
