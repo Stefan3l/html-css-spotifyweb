@@ -170,6 +170,25 @@
     font-size: 1.125rem;
 } */
 
+a {
+    text-decoration: none;
+    color:var(--color-font-header);
+}
+
+.menu-categories li a:hover {
+    color: #fff;
+}
+
+.menu-categories li:first-child::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 2.5rem;
+    background-color: limegreen;
+    margin: auto;
+    margin-top: .1875rem;
+}
+
 li:hover {
     color: #fff;
     cursor: pointer;
@@ -357,6 +376,10 @@ main {
     padding: 1.25rem;
 }
 
+.top-main .btn-large:hover {
+    font-size: 1.25rem;
+}
+
 /*----------------
     FOOTER
 ------------------*/
@@ -486,6 +509,14 @@ footer {
     width: 25%;
     height: 100%;
     background-color: #c1c1c1;
+}
+
+.play-music .play-bar .play-bar-inner:hover {
+    background-color: lawngreen;
+}
+
+.volume .volume-bar .volume-bar-inner:hover {
+    background-color: lawngreen;
 }
 
 .footer-right {
